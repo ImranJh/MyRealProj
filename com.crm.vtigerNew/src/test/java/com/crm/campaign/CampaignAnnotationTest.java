@@ -15,7 +15,7 @@ import com.crm.vtiger.comcast.genericUtility.BaseClass;
  */
 
 public class CampaignAnnotationTest extends BaseClass{
-	@Test(groups = "smokeTest", retryAnalyzer= com.crm.vtiger.comcast.genericUtility.RetryAnalyzerImplementationClass.class)
+	@Test(groups = "smokeTest")
 	public void campaign() throws Throwable
 	{
 		
@@ -37,7 +37,6 @@ public class CampaignAnnotationTest extends BaseClass{
 		String msg = cip.information();
 		Assert.assertEquals(msg.contains(campaignName), true);
 		
-		Reporter.log("pass", true);
 		System.out.println("Regression Test Run 1");
 	}
 }
